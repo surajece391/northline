@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f3ee;
+  color: #171714;
+}
+
+header {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 13px 22px;
+  background: #171714;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 100px 7%;
+}
+
+.hero h1 {
+  font-size: 70px;
+  line-height: 1;
+  max-width: 900px;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 20px;
+  color: #666;
+}
+
+section {
+  padding: 80px 7%;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.price {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  padding: 40px 7%;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .features,
+  .pricing {
+    grid-template-columns: 1fr;
+  }
+  }
